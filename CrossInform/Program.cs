@@ -10,6 +10,29 @@ namespace CrossInform
     {
         static void Main(string[] args)
         {
+            string s = "заданная,по,умолчанию,строка,на,входе,в,которой,производится,поиск,триплетов";
+            Dictionary<string,int> triplet = new Dictionary<string,int>();
+            //Console.Write("Введите строку: ");
+            //s=Console.ReadLine();
+            if (s.Length > 3)
+            {
+                int i = 3;
+                string trip = s.Substring(0, 3);
+                triplet.Add(trip, 1);
+                while (i < s.Length)
+                {
+
+                }
+            }
+            else if (s.Length == 3)
+            {
+                Console.WriteLine(s, " ", 1);
+            } 
+            else
+            {
+                Console.WriteLine("В строке нет ни одного триплета");
+            }
+            Console.ReadKey();
         }
     }
 }
